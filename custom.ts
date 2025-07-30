@@ -331,16 +331,4 @@ namespace ikchain {
     export function updateChain(chain: IKChain) {
         chain.update();
     }
-
-    //% block="get segment $segmentIndex from $chain"
-    //% segmentIndex.min=0 segmentIndex.max=19 segmentIndex.defl=0
-    //% chain.shadow=variables_get
-    //% weight=75
-    //% block="get startX of segment $segmentIndex from $chain"
-    export function getSegmentStartX(chain: IKChain, segmentIndex: number): number {
-        if (segmentIndex < 0 || segmentIndex >= chain.segments.length) {
-            return 0;
-        }
-        return chain.segments[segmentIndex].startX;
-    }
 }
