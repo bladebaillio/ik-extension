@@ -1,6 +1,6 @@
 //% weight=100 color=#0050bb icon="\uf256"
 //% block="IK"
-namespace ikchain {
+namespace ik {
     export class IKChain {
         public segments: Segment[] = [];
         private headSprite: Sprite;
